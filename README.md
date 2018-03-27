@@ -1,4 +1,4 @@
-Getting Started with OpenShift Sample Application
+Trying simple JSP page under OpenShift
 ====================
 
-This is a sample application for the book, Getting Started with OpenShift
+This is a sample page to try COMP4321's JSP Tutorial (Lab 4, example 1)
