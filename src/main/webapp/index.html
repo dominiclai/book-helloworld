@@ -1,11 +1,32 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Welcome to OpenShift</title>
-</head>
-<body>
-<h1>Hello, OpenShift build.</h1>
-</body>
-</html>
+<%@ page import="java.util.*" %>
+
+
+<HTML>
+<!-- I am HTML Comment -->
+<%-- I am JSP Comment --%>
+<BODY>
+
+<% java.util.Date date = new java.util.Date(); %>
+
+Hello!  The time is now <%= date %> <br>
+
+
+<%! 
+    String print_hour(Date date)
+    {
+        return "It is now "+date.getHours()%12+" o\'clock<BR>" ;
+    }
+%>
+
+<%=print_hour(date)%>
+
+<%
+    out.println( "<BR>Your machine's address is " );
+    out.println( request.getRemoteHost());
+%>
+
+
+
+
+</BODY>
+</HTML>
